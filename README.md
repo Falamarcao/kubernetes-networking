@@ -6,7 +6,7 @@
 
     cd kubernetes
 
-    kubectl apply -f users-service.yaml,users-deployment.yaml,auth-service.yaml,auth-deployment.yaml
+    kubectl apply -f users-service.yaml,users-deployment.yaml,auth-service.yaml,auth-deployment.yaml,tasks-service.yaml,tasks-deployment.yaml
 ```
 
 ```sh
@@ -28,3 +28,8 @@ A application that uses de port 3000 exposed by a Kubernetes Service Object name
 ```sh
     kubectl get namespaces
 ```
+
+To learn more about check the files:
+* [Kubernetes YAML files](kubernetes)
+* [nginx.conf](frontend/conf/nginx.conf) - _Using reserse proxy settings_
+* [App.js](frontend/src/App.js) - _sending requests using the nginx reverse proxy_
