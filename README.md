@@ -6,12 +6,16 @@
 
     cd kubernetes
 
-    kubectl apply -f users-service.yaml,users-deployment.yaml,auth-service.yaml,auth-deployment.yaml,tasks-service.yaml,tasks-deployment.yaml
+    kubectl apply -f users-service.yaml,users-deployment.yaml,auth-service.yaml,auth-deployment.yaml,tasks-service.yaml,tasks-deployment.yaml,frontend-service.yaml,frontend-deployment.yaml
 ```
 
 ```sh
     # Check services IPs - Used internally by Kubernetes Cluster
     kubectl get services
+```
+
+```sh
+    kubectl delete -f users-service.yaml,users-deployment.yaml,auth-service.yaml,auth-deployment.yaml,tasks-service.yaml,tasks-deployment.yaml,frontend-service.yaml,frontend-deployment.yaml
 ```
 
 ## Environment Variables for Pod-to-Pod Communication
